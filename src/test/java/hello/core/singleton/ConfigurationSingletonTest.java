@@ -43,5 +43,6 @@ public class ConfigurationSingletonTest {
         System.out.println("bean.getClass() = " + bean.getClass());
         //내가 만든 클래스가 아니라 스프링이 CGLIB라는 바이트코드 조작 라이브러리를 사용해서
         // AppConfig 클래스 를 상속받은 임의의 다른 클래스를 만들고, 그 다른 클래스를 스프링 빈으로 등록
+        // 즉, @Configuration 이 싱글톤 보장! 꼭 사용!
     }
 }
